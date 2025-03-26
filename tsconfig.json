@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2020",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@common/*": ["src/common/*"],
+      "@config/*": ["src/config/*"],
+      "@security/*": ["src/security/*"],
+      "@orders/*": ["src/orders/*"],
+      "@deliveries/*": ["src/deliveries/*"],
+      "@users/*": ["src/users/*"],
+      "@database/*": ["src/database/*"],
+      "@stats/*": ["src/stats/*"]
+    }
+  }
+}
