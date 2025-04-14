@@ -1,0 +1,6 @@
+export enum Role {
+  ADMIN = "SYS_ADMIN",
+  TENANT_ADMIN = "TENANT_ADMIN",
+  USER = "TENANT_USER",
+  COURIER = "TENANT_COURIER",
+}
