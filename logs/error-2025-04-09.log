@@ -1,0 +1,535 @@
+[2025-04-09 09:44:04] [31merror[39m: [31mQueryFailedError: invalid input syntax for type uuid: "Empanada04$"[39m
+[31m    at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:331:19)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at SelectQueryBuilder.loadRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3805:25)[39m
+[31m    at SelectQueryBuilder.executeEntitiesAndRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3551:26)[39m
+[31m    at SelectQueryBuilder.getRawAndEntities (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1670:29)[39m
+[31m    at SelectQueryBuilder.getMany (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1760:25)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:118:32[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at SubjectDatabaseEntityLoader.load (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:150:9)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/EntityPersistExecutor.ts:116:21 {[39m
+[31m  query: 'SELECT "TenantModel"."id" AS "TenantModel_id", "TenantModel"."tenant_name" AS "TenantModel_tenant_name", "TenantModel"."tenant_id" AS "TenantModel_tenant_id", "TenantModel"."tenant_id_type" AS "TenantModel_tenant_id_type", "TenantModel"."person_type" AS "TenantModel_person_type", "TenantModel"."subscription_plan" AS "TenantModel_subscription_plan", "TenantModel"."currency" AS "TenantModel_currency", "TenantModel"."status" AS "TenantModel_status" FROM "tenants" "TenantModel" WHERE "TenantModel"."id" IN ($1)',[39m
+[31m  parameters: [ 'Empanada04$' ],[39m
+[31m  driverError: error: invalid input syntax for type uuid: "Empanada04$"[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/pg/lib/client.js:545:17[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m      at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:260:25)[39m
+[31m      at SelectQueryBuilder.loadRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3805:25)[39m
+[31m      at SelectQueryBuilder.executeEntitiesAndRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3551:26)[39m
+[31m      at SelectQueryBuilder.getRawAndEntities (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1670:29)[39m
+[31m      at SelectQueryBuilder.getMany (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1760:25)[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:118:32[39m
+[31m      at async Promise.all (index 0)[39m
+[31m      at SubjectDatabaseEntityLoader.load (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:150:9) {[39m
+[31m    length: 143,[39m
+[31m    severity: 'ERROR',[39m
+[31m    code: '22P02',[39m
+[31m    detail: undefined,[39m
+[31m    hint: undefined,[39m
+[31m    position: undefined,[39m
+[31m    internalPosition: undefined,[39m
+[31m    internalQuery: undefined,[39m
+[31m    where: "unnamed portal parameter $1 = '...'",[39m
+[31m    schema: undefined,[39m
+[31m    table: undefined,[39m
+[31m    column: undefined,[39m
+[31m    dataType: undefined,[39m
+[31m    constraint: undefined,[39m
+[31m    file: 'uuid.c',[39m
+[31m    line: '133',[39m
+[31m    routine: 'string_to_uuid'[39m
+[31m  },[39m
+[31m  length: 143,[39m
+[31m  severity: 'ERROR',[39m
+[31m  code: '22P02',[39m
+[31m  detail: undefined,[39m
+[31m  hint: undefined,[39m
+[31m  position: undefined,[39m
+[31m  internalPosition: undefined,[39m
+[31m  internalQuery: undefined,[39m
+[31m  where: "unnamed portal parameter $1 = '...'",[39m
+[31m  schema: undefined,[39m
+[31m  table: undefined,[39m
+[31m  column: undefined,[39m
+[31m  dataType: undefined,[39m
+[31m  constraint: undefined,[39m
+[31m  file: 'uuid.c',[39m
+[31m  line: '133',[39m
+[31m  routine: 'string_to_uuid'[39m
+[31m}[39m
+[2025-04-09 09:45:38] [31merror[39m: [31mQueryFailedError: invalid input syntax for type uuid: "Empanada04$"[39m
+[31m    at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:331:19)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at SelectQueryBuilder.loadRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3805:25)[39m
+[31m    at SelectQueryBuilder.executeEntitiesAndRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3551:26)[39m
+[31m    at SelectQueryBuilder.getRawAndEntities (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1670:29)[39m
+[31m    at SelectQueryBuilder.getMany (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1760:25)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:118:32[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at SubjectDatabaseEntityLoader.load (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:150:9)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/EntityPersistExecutor.ts:116:21 {[39m
+[31m  query: 'SELECT "TenantModel"."id" AS "TenantModel_id", "TenantModel"."tenant_name" AS "TenantModel_tenant_name", "TenantModel"."tenant_id" AS "TenantModel_tenant_id", "TenantModel"."tenant_id_type" AS "TenantModel_tenant_id_type", "TenantModel"."person_type" AS "TenantModel_person_type", "TenantModel"."subscription_plan" AS "TenantModel_subscription_plan", "TenantModel"."currency" AS "TenantModel_currency", "TenantModel"."status" AS "TenantModel_status" FROM "tenants" "TenantModel" WHERE "TenantModel"."id" IN ($1)',[39m
+[31m  parameters: [ 'Empanada04$' ],[39m
+[31m  driverError: error: invalid input syntax for type uuid: "Empanada04$"[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/pg/lib/client.js:545:17[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m      at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:260:25)[39m
+[31m      at SelectQueryBuilder.loadRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3805:25)[39m
+[31m      at SelectQueryBuilder.executeEntitiesAndRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3551:26)[39m
+[31m      at SelectQueryBuilder.getRawAndEntities (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1670:29)[39m
+[31m      at SelectQueryBuilder.getMany (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1760:25)[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:118:32[39m
+[31m      at async Promise.all (index 0)[39m
+[31m      at SubjectDatabaseEntityLoader.load (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:150:9) {[39m
+[31m    length: 143,[39m
+[31m    severity: 'ERROR',[39m
+[31m    code: '22P02',[39m
+[31m    detail: undefined,[39m
+[31m    hint: undefined,[39m
+[31m    position: undefined,[39m
+[31m    internalPosition: undefined,[39m
+[31m    internalQuery: undefined,[39m
+[31m    where: "unnamed portal parameter $1 = '...'",[39m
+[31m    schema: undefined,[39m
+[31m    table: undefined,[39m
+[31m    column: undefined,[39m
+[31m    dataType: undefined,[39m
+[31m    constraint: undefined,[39m
+[31m    file: 'uuid.c',[39m
+[31m    line: '133',[39m
+[31m    routine: 'string_to_uuid'[39m
+[31m  },[39m
+[31m  length: 143,[39m
+[31m  severity: 'ERROR',[39m
+[31m  code: '22P02',[39m
+[31m  detail: undefined,[39m
+[31m  hint: undefined,[39m
+[31m  position: undefined,[39m
+[31m  internalPosition: undefined,[39m
+[31m  internalQuery: undefined,[39m
+[31m  where: "unnamed portal parameter $1 = '...'",[39m
+[31m  schema: undefined,[39m
+[31m  table: undefined,[39m
+[31m  column: undefined,[39m
+[31m  dataType: undefined,[39m
+[31m  constraint: undefined,[39m
+[31m  file: 'uuid.c',[39m
+[31m  line: '133',[39m
+[31m  routine: 'string_to_uuid'[39m
+[31m}[39m
+[2025-04-09 09:46:24] [31merror[39m: [31mQueryFailedError: invalid input syntax for type uuid: "Empanada04$"[39m
+[31m    at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:331:19)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at SelectQueryBuilder.loadRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3805:25)[39m
+[31m    at SelectQueryBuilder.executeEntitiesAndRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3551:26)[39m
+[31m    at SelectQueryBuilder.getRawAndEntities (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1670:29)[39m
+[31m    at SelectQueryBuilder.getMany (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1760:25)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:118:32[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at SubjectDatabaseEntityLoader.load (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:150:9)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/EntityPersistExecutor.ts:116:21 {[39m
+[31m  query: 'SELECT "TenantModel"."id" AS "TenantModel_id", "TenantModel"."tenant_name" AS "TenantModel_tenant_name", "TenantModel"."tenant_id" AS "TenantModel_tenant_id", "TenantModel"."tenant_id_type" AS "TenantModel_tenant_id_type", "TenantModel"."person_type" AS "TenantModel_person_type", "TenantModel"."subscription_plan" AS "TenantModel_subscription_plan", "TenantModel"."currency" AS "TenantModel_currency", "TenantModel"."status" AS "TenantModel_status" FROM "tenants" "TenantModel" WHERE "TenantModel"."id" IN ($1)',[39m
+[31m  parameters: [ 'Empanada04$' ],[39m
+[31m  driverError: error: invalid input syntax for type uuid: "Empanada04$"[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/pg/lib/client.js:545:17[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m      at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:260:25)[39m
+[31m      at SelectQueryBuilder.loadRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3805:25)[39m
+[31m      at SelectQueryBuilder.executeEntitiesAndRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3551:26)[39m
+[31m      at SelectQueryBuilder.getRawAndEntities (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1670:29)[39m
+[31m      at SelectQueryBuilder.getMany (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1760:25)[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:118:32[39m
+[31m      at async Promise.all (index 0)[39m
+[31m      at SubjectDatabaseEntityLoader.load (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:150:9) {[39m
+[31m    length: 143,[39m
+[31m    severity: 'ERROR',[39m
+[31m    code: '22P02',[39m
+[31m    detail: undefined,[39m
+[31m    hint: undefined,[39m
+[31m    position: undefined,[39m
+[31m    internalPosition: undefined,[39m
+[31m    internalQuery: undefined,[39m
+[31m    where: "unnamed portal parameter $1 = '...'",[39m
+[31m    schema: undefined,[39m
+[31m    table: undefined,[39m
+[31m    column: undefined,[39m
+[31m    dataType: undefined,[39m
+[31m    constraint: undefined,[39m
+[31m    file: 'uuid.c',[39m
+[31m    line: '133',[39m
+[31m    routine: 'string_to_uuid'[39m
+[31m  },[39m
+[31m  length: 143,[39m
+[31m  severity: 'ERROR',[39m
+[31m  code: '22P02',[39m
+[31m  detail: undefined,[39m
+[31m  hint: undefined,[39m
+[31m  position: undefined,[39m
+[31m  internalPosition: undefined,[39m
+[31m  internalQuery: undefined,[39m
+[31m  where: "unnamed portal parameter $1 = '...'",[39m
+[31m  schema: undefined,[39m
+[31m  table: undefined,[39m
+[31m  column: undefined,[39m
+[31m  dataType: undefined,[39m
+[31m  constraint: undefined,[39m
+[31m  file: 'uuid.c',[39m
+[31m  line: '133',[39m
+[31m  routine: 'string_to_uuid'[39m
+[31m}[39m
+[2025-04-09 09:56:35] [31merror[39m: [31mError: Missing required fields[39m
+[31m    at CredentialsRepositoryImpl.toPersistence (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/security/infrastructure/persistence/repositories/credential.repository.impl.ts:70:13)[39m
+[31m    at CredentialsRepositoryImpl.create (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/security/infrastructure/persistence/repositories/credential.repository.impl.ts:17:35)[39m
+[31m    at TenantCreationServiceImpl.createTenant (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:98:40)[39m
+[31m    at TenantController.createTenant (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/infrastructure/controllers/create-tenant-controller.ts:29:12)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@nestjs/core/router/router-execution-context.js:46:28[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@nestjs/core/router/router-proxy.js:9:17[39m
+[2025-04-09 11:36:26] [31merror[39m: [31mQueryFailedError: null value in column "id" of relation "tenants" violates not-null constraint[39m
+[31m    at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:331:19)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at InsertQueryBuilder.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/InsertQueryBuilder.ts:163:33)[39m
+[31m    at SubjectExecutor.executeInsertOperations (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:435:42)[39m
+[31m    at SubjectExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:137:9)[39m
+[31m    at EntityPersistExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/EntityPersistExecutor.ts:182:21)[39m
+[31m    at TenantRepositoryImpl.create (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/infrastructure/repositories/tenant.repository.impl.ts:19:24)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:70:29[39m
+[31m    at runInTransaction (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/common/utils/transaction.util.ts:13:20)[39m
+[31m    at TenantCreationServiceImpl.createTenant (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:32:12) {[39m
+[31m  query: 'INSERT INTO "tenants"("id", "tenant_name", "tenant_id", "tenant_id_type", "person_type", "subscription_plan", "currency", "status") VALUES ($1, $2, $3, $4, $5, $6, $7, DEFAULT) RETURNING "id", "status"',[39m
+[31m  parameters: [[39m
+[31m    null,[39m
+[31m    'Simora SAS BIC',[39m
+[31m    '901679855-3',[39m
+[31m    'NIT',[39m
+[31m    'juridica',[39m
+[31m    'free',[39m
+[31m    'COP'[39m
+[31m  ],[39m
+[31m  driverError: error: null value in column "id" of relation "tenants" violates not-null constraint[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/pg/lib/client.js:545:17[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m      at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:260:25)[39m
+[31m      at InsertQueryBuilder.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/InsertQueryBuilder.ts:163:33)[39m
+[31m      at SubjectExecutor.executeInsertOperations (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:435:42)[39m
+[31m      at SubjectExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:137:9)[39m
+[31m      at EntityPersistExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/EntityPersistExecutor.ts:182:21)[39m
+[31m      at TenantRepositoryImpl.create (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/infrastructure/repositories/tenant.repository.impl.ts:19:24)[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:70:29[39m
+[31m      at runInTransaction (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/common/utils/transaction.util.ts:13:20) {[39m
+[31m    length: 248,[39m
+[31m    severity: 'ERROR',[39m
+[31m    code: '23502',[39m
+[31m    detail: 'Failing row contains (null, Simora SAS BIC, 901679855-3, NIT, juridica, free, COP, t).',[39m
+[31m    hint: undefined,[39m
+[31m    position: undefined,[39m
+[31m    internalPosition: undefined,[39m
+[31m    internalQuery: undefined,[39m
+[31m    where: undefined,[39m
+[31m    schema: 'public',[39m
+[31m    table: 'tenants',[39m
+[31m    column: 'id',[39m
+[31m    dataType: undefined,[39m
+[31m    constraint: undefined,[39m
+[31m    file: 'execMain.c',[39m
+[31m    line: '1972',[39m
+[31m    routine: 'ExecConstraints'[39m
+[31m  },[39m
+[31m  length: 248,[39m
+[31m  severity: 'ERROR',[39m
+[31m  code: '23502',[39m
+[31m  detail: 'Failing row contains (null, Simora SAS BIC, 901679855-3, NIT, juridica, free, COP, t).',[39m
+[31m  hint: undefined,[39m
+[31m  position: undefined,[39m
+[31m  internalPosition: undefined,[39m
+[31m  internalQuery: undefined,[39m
+[31m  where: undefined,[39m
+[31m  schema: 'public',[39m
+[31m  table: 'tenants',[39m
+[31m  column: 'id',[39m
+[31m  dataType: undefined,[39m
+[31m  constraint: undefined,[39m
+[31m  file: 'execMain.c',[39m
+[31m  line: '1972',[39m
+[31m  routine: 'ExecConstraints'[39m
+[31m}[39m
+[2025-04-09 11:37:48] [31merror[39m: [31mQueryFailedError: null value in column "id" of relation "tenants" violates not-null constraint[39m
+[31m    at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:331:19)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at InsertQueryBuilder.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/InsertQueryBuilder.ts:163:33)[39m
+[31m    at SubjectExecutor.executeInsertOperations (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:435:42)[39m
+[31m    at SubjectExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:137:9)[39m
+[31m    at EntityPersistExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/EntityPersistExecutor.ts:182:21)[39m
+[31m    at TenantRepositoryImpl.create (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/infrastructure/repositories/tenant.repository.impl.ts:19:24)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:69:29[39m
+[31m    at runInTransaction (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/common/utils/transaction.util.ts:13:20)[39m
+[31m    at TenantCreationServiceImpl.createTenant (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:32:12) {[39m
+[31m  query: 'INSERT INTO "tenants"("id", "tenant_name", "tenant_id", "tenant_id_type", "person_type", "subscription_plan", "currency", "status") VALUES ($1, $2, $3, $4, $5, $6, $7, DEFAULT) RETURNING "id", "status"',[39m
+[31m  parameters: [[39m
+[31m    null,[39m
+[31m    'Simora SAS BIC',[39m
+[31m    '901679855-3',[39m
+[31m    'NIT',[39m
+[31m    'juridica',[39m
+[31m    'free',[39m
+[31m    'COP'[39m
+[31m  ],[39m
+[31m  driverError: error: null value in column "id" of relation "tenants" violates not-null constraint[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/pg/lib/client.js:545:17[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m      at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:260:25)[39m
+[31m      at InsertQueryBuilder.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/InsertQueryBuilder.ts:163:33)[39m
+[31m      at SubjectExecutor.executeInsertOperations (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:435:42)[39m
+[31m      at SubjectExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:137:9)[39m
+[31m      at EntityPersistExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/EntityPersistExecutor.ts:182:21)[39m
+[31m      at TenantRepositoryImpl.create (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/infrastructure/repositories/tenant.repository.impl.ts:19:24)[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:69:29[39m
+[31m      at runInTransaction (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/common/utils/transaction.util.ts:13:20) {[39m
+[31m    length: 248,[39m
+[31m    severity: 'ERROR',[39m
+[31m    code: '23502',[39m
+[31m    detail: 'Failing row contains (null, Simora SAS BIC, 901679855-3, NIT, juridica, free, COP, t).',[39m
+[31m    hint: undefined,[39m
+[31m    position: undefined,[39m
+[31m    internalPosition: undefined,[39m
+[31m    internalQuery: undefined,[39m
+[31m    where: undefined,[39m
+[31m    schema: 'public',[39m
+[31m    table: 'tenants',[39m
+[31m    column: 'id',[39m
+[31m    dataType: undefined,[39m
+[31m    constraint: undefined,[39m
+[31m    file: 'execMain.c',[39m
+[31m    line: '1972',[39m
+[31m    routine: 'ExecConstraints'[39m
+[31m  },[39m
+[31m  length: 248,[39m
+[31m  severity: 'ERROR',[39m
+[31m  code: '23502',[39m
+[31m  detail: 'Failing row contains (null, Simora SAS BIC, 901679855-3, NIT, juridica, free, COP, t).',[39m
+[31m  hint: undefined,[39m
+[31m  position: undefined,[39m
+[31m  internalPosition: undefined,[39m
+[31m  internalQuery: undefined,[39m
+[31m  where: undefined,[39m
+[31m  schema: 'public',[39m
+[31m  table: 'tenants',[39m
+[31m  column: 'id',[39m
+[31m  dataType: undefined,[39m
+[31m  constraint: undefined,[39m
+[31m  file: 'execMain.c',[39m
+[31m  line: '1972',[39m
+[31m  routine: 'ExecConstraints'[39m
+[31m}[39m
+[2025-04-09 11:39:59] [31merror[39m: [31mQueryFailedError: null value in column "id" of relation "representatives" violates not-null constraint[39m
+[31m    at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:331:19)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at InsertQueryBuilder.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/InsertQueryBuilder.ts:163:33)[39m
+[31m    at SubjectExecutor.executeInsertOperations (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:435:42)[39m
+[31m    at SubjectExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:137:9)[39m
+[31m    at EntityPersistExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/EntityPersistExecutor.ts:182:21)[39m
+[31m    at RepresentativeRepositoryImpl.create (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/infrastructure/repositories/representative.repository.impl.ts:23:24)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:76:7[39m
+[31m    at runInTransaction (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/common/utils/transaction.util.ts:13:20)[39m
+[31m    at TenantCreationServiceImpl.createTenant (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:32:12) {[39m
+[31m  query: 'INSERT INTO "representatives"("id", "representative_name", "representative_id_type", "representative_id", "tenant_id") VALUES ($1, $2, $3, $4, DEFAULT) RETURNING "id"',[39m
+[31m  parameters: [ null, 'Laura Camila Rincón Urrego', 'CC', '1020823028' ],[39m
+[31m  driverError: error: null value in column "id" of relation "representatives" violates not-null constraint[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/pg/lib/client.js:545:17[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m      at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:260:25)[39m
+[31m      at InsertQueryBuilder.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/InsertQueryBuilder.ts:163:33)[39m
+[31m      at SubjectExecutor.executeInsertOperations (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:435:42)[39m
+[31m      at SubjectExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:137:9)[39m
+[31m      at EntityPersistExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/EntityPersistExecutor.ts:182:21)[39m
+[31m      at RepresentativeRepositoryImpl.create (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/infrastructure/repositories/representative.repository.impl.ts:23:24)[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:76:7[39m
+[31m      at runInTransaction (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/common/utils/transaction.util.ts:13:20) {[39m
+[31m    length: 257,[39m
+[31m    severity: 'ERROR',[39m
+[31m    code: '23502',[39m
+[31m    detail: 'Failing row contains (null, Laura Camila Rincón Urrego, CC, 1020823028, null).',[39m
+[31m    hint: undefined,[39m
+[31m    position: undefined,[39m
+[31m    internalPosition: undefined,[39m
+[31m    internalQuery: undefined,[39m
+[31m    where: undefined,[39m
+[31m    schema: 'public',[39m
+[31m    table: 'representatives',[39m
+[31m    column: 'id',[39m
+[31m    dataType: undefined,[39m
+[31m    constraint: undefined,[39m
+[31m    file: 'execMain.c',[39m
+[31m    line: '1972',[39m
+[31m    routine: 'ExecConstraints'[39m
+[31m  },[39m
+[31m  length: 257,[39m
+[31m  severity: 'ERROR',[39m
+[31m  code: '23502',[39m
+[31m  detail: 'Failing row contains (null, Laura Camila Rincón Urrego, CC, 1020823028, null).',[39m
+[31m  hint: undefined,[39m
+[31m  position: undefined,[39m
+[31m  internalPosition: undefined,[39m
+[31m  internalQuery: undefined,[39m
+[31m  where: undefined,[39m
+[31m  schema: 'public',[39m
+[31m  table: 'representatives',[39m
+[31m  column: 'id',[39m
+[31m  dataType: undefined,[39m
+[31m  constraint: undefined,[39m
+[31m  file: 'execMain.c',[39m
+[31m  line: '1972',[39m
+[31m  routine: 'ExecConstraints'[39m
+[31m}[39m
+[2025-04-09 11:41:16] [31merror[39m: [31mTypeError: Cannot read properties of undefined (reading 'id')[39m
+[31m    at RepresentativeRepositoryImpl.toDomain (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/infrastructure/repositories/representative.repository.impl.ts:105:30)[39m
+[31m    at RepresentativeRepositoryImpl.create (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/infrastructure/repositories/representative.repository.impl.ts:24:17)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:75:7[39m
+[31m    at runInTransaction (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/common/utils/transaction.util.ts:13:20)[39m
+[31m    at TenantCreationServiceImpl.createTenant (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:32:12)[39m
+[31m    at TenantController.createTenant (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/infrastructure/controllers/create-tenant-controller.ts:29:12)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@nestjs/core/router/router-execution-context.js:46:28[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@nestjs/core/router/router-proxy.js:9:17[39m
+[2025-04-09 11:47:28] [31merror[39m: [31mError: Missing required fields[39m
+[31m    at CredentialsRepositoryImpl.toPersistence (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/security/infrastructure/persistence/repositories/credential.repository.impl.ts:80:13)[39m
+[31m    at CredentialsRepositoryImpl.create (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/security/infrastructure/persistence/repositories/credential.repository.impl.ts:20:35)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:110:40[39m
+[31m    at runInTransaction (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/common/utils/transaction.util.ts:13:20)[39m
+[31m    at TenantCreationServiceImpl.createTenant (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:32:12)[39m
+[31m    at TenantController.createTenant (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/infrastructure/controllers/create-tenant-controller.ts:29:12)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@nestjs/core/router/router-execution-context.js:46:28[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@nestjs/core/router/router-proxy.js:9:17[39m
+[2025-04-09 11:51:20] [31merror[39m: [31mQueryFailedError: null value in column "id" of relation "credentials" violates not-null constraint[39m
+[31m    at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:331:19)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at InsertQueryBuilder.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/InsertQueryBuilder.ts:163:33)[39m
+[31m    at SubjectExecutor.executeInsertOperations (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:435:42)[39m
+[31m    at SubjectExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:137:9)[39m
+[31m    at EntityPersistExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/EntityPersistExecutor.ts:182:21)[39m
+[31m    at CredentialsRepositoryImpl.create (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/security/infrastructure/persistence/repositories/credential.repository.impl.ts:23:24)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:110:7[39m
+[31m    at runInTransaction (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/common/utils/transaction.util.ts:13:20)[39m
+[31m    at TenantCreationServiceImpl.createTenant (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:32:12) {[39m
+[31m  query: 'INSERT INTO "credentials"("id", "username", "password", "is_active", "last_login") VALUES ($1, $2, $3, $4, $5) RETURNING "id", "is_active"',[39m
+[31m  parameters: [[39m
+[31m    null,[39m
+[31m    'Laura Camila Rincón Urrego',[39m
+[31m    '$2b$10$HXkH9sOLKFb/XxHL1efxs.4EoirKXa0ZvvHro9ZbW9824EOFOq7BK',[39m
+[31m    1,[39m
+[31m    null[39m
+[31m  ],[39m
+[31m  driverError: error: null value in column "id" of relation "credentials" violates not-null constraint[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/pg/lib/client.js:545:17[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m      at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:260:25)[39m
+[31m      at InsertQueryBuilder.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/InsertQueryBuilder.ts:163:33)[39m
+[31m      at SubjectExecutor.executeInsertOperations (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:435:42)[39m
+[31m      at SubjectExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:137:9)[39m
+[31m      at EntityPersistExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/EntityPersistExecutor.ts:182:21)[39m
+[31m      at CredentialsRepositoryImpl.create (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/security/infrastructure/persistence/repositories/credential.repository.impl.ts:23:24)[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:110:7[39m
+[31m      at runInTransaction (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/common/utils/transaction.util.ts:13:20) {[39m
+[31m    length: 298,[39m
+[31m    severity: 'ERROR',[39m
+[31m    code: '23502',[39m
+[31m    detail: 'Failing row contains (null, Laura Camila Rincón Urrego, $2b$10$HXkH9sOLKFb/XxHL1efxs.4EoirKXa0ZvvHro9ZbW9824EOFOq7BK, t, null).',[39m
+[31m    hint: undefined,[39m
+[31m    position: undefined,[39m
+[31m    internalPosition: undefined,[39m
+[31m    internalQuery: undefined,[39m
+[31m    where: undefined,[39m
+[31m    schema: 'public',[39m
+[31m    table: 'credentials',[39m
+[31m    column: 'id',[39m
+[31m    dataType: undefined,[39m
+[31m    constraint: undefined,[39m
+[31m    file: 'execMain.c',[39m
+[31m    line: '1972',[39m
+[31m    routine: 'ExecConstraints'[39m
+[31m  },[39m
+[31m  length: 298,[39m
+[31m  severity: 'ERROR',[39m
+[31m  code: '23502',[39m
+[31m  detail: 'Failing row contains (null, Laura Camila Rincón Urrego, $2b$10$HXkH9sOLKFb/XxHL1efxs.4EoirKXa0ZvvHro9ZbW9824EOFOq7BK, t, null).',[39m
+[31m  hint: undefined,[39m
+[31m  position: undefined,[39m
+[31m  internalPosition: undefined,[39m
+[31m  internalQuery: undefined,[39m
+[31m  where: undefined,[39m
+[31m  schema: 'public',[39m
+[31m  table: 'credentials',[39m
+[31m  column: 'id',[39m
+[31m  dataType: undefined,[39m
+[31m  constraint: undefined,[39m
+[31m  file: 'execMain.c',[39m
+[31m  line: '1972',[39m
+[31m  routine: 'ExecConstraints'[39m
+[31m}[39m
+[2025-04-09 11:52:49] [31merror[39m: [31mQueryFailedError: null value in column "id" of relation "users" violates not-null constraint[39m
+[31m    at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:331:19)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at InsertQueryBuilder.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/InsertQueryBuilder.ts:163:33)[39m
+[31m    at SubjectExecutor.executeInsertOperations (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:435:42)[39m
+[31m    at SubjectExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:137:9)[39m
+[31m    at EntityPersistExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/EntityPersistExecutor.ts:182:21)[39m
+[31m    at UserRepositoryImpl.create (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/security/infrastructure/persistence/repositories/user.repository.impl.ts:75:24)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:113:7[39m
+[31m    at runInTransaction (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/common/utils/transaction.util.ts:13:20)[39m
+[31m    at TenantCreationServiceImpl.createTenant (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:32:12) {[39m
+[31m  query: 'INSERT INTO "users"("id", "full_name", "email", "phone_number", "role", "tenant_id", "credentials_id") VALUES ($1, $2, $3, $4, $5, $6, DEFAULT) RETURNING "id"',[39m
+[31m  parameters: [[39m
+[31m    null,[39m
+[31m    'Laura Camila Rincón Urrego',[39m
+[31m    'info@simora.co',[39m
+[31m    '573167685319',[39m
+[31m    'TENANT_ADMIN',[39m
+[31m    'd38df2b7-36a6-42f5-8c43-e1ab49e5a433'[39m
+[31m  ],[39m
+[31m  driverError: error: null value in column "id" of relation "users" violates not-null constraint[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/pg/lib/client.js:545:17[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m      at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:260:25)[39m
+[31m      at InsertQueryBuilder.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/InsertQueryBuilder.ts:163:33)[39m
+[31m      at SubjectExecutor.executeInsertOperations (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:435:42)[39m
+[31m      at SubjectExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectExecutor.ts:137:9)[39m
+[31m      at EntityPersistExecutor.execute (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/EntityPersistExecutor.ts:182:21)[39m
+[31m      at UserRepositoryImpl.create (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/security/infrastructure/persistence/repositories/user.repository.impl.ts:75:24)[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/tenant/application/services/create-tenant.service.impl.ts:113:7[39m
+[31m      at runInTransaction (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/common/utils/transaction.util.ts:13:20) {[39m
+[31m    length: 303,[39m
+[31m    severity: 'ERROR',[39m
+[31m    code: '23502',[39m
+[31m    detail: 'Failing row contains (null, Laura Camila Rincón Urrego, info@simora.co, 573167685319, TENANT_ADMIN, d38df2b7-36a6-42f5-8c43-e1ab49e5a433, null).',[39m
+[31m    hint: undefined,[39m
+[31m    position: undefined,[39m
+[31m    internalPosition: undefined,[39m
+[31m    internalQuery: undefined,[39m
+[31m    where: undefined,[39m
+[31m    schema: 'public',[39m
+[31m    table: 'users',[39m
+[31m    column: 'id',[39m
+[31m    dataType: undefined,[39m
+[31m    constraint: undefined,[39m
+[31m    file: 'execMain.c',[39m
+[31m    line: '1972',[39m
+[31m    routine: 'ExecConstraints'[39m
+[31m  },[39m
+[31m  length: 303,[39m
+[31m  severity: 'ERROR',[39m
+[31m  code: '23502',[39m
+[31m  detail: 'Failing row contains (null, Laura Camila Rincón Urrego, info@simora.co, 573167685319, TENANT_ADMIN, d38df2b7-36a6-42f5-8c43-e1ab49e5a433, null).',[39m
+[31m  hint: undefined,[39m
+[31m  position: undefined,[39m
+[31m  internalPosition: undefined,[39m
+[31m  internalQuery: undefined,[39m
+[31m  where: undefined,[39m
+[31m  schema: 'public',[39m
+[31m  table: 'users',[39m
+[31m  column: 'id',[39m
+[31m  dataType: undefined,[39m
+[31m  constraint: undefined,[39m
+[31m  file: 'execMain.c',[39m
+[31m  line: '1972',[39m
+[31m  routine: 'ExecConstraints'[39m
+[31m}[39m

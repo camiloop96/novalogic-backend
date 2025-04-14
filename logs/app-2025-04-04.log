@@ -1,0 +1,178 @@
+[2025-04-04 11:01:56] [32minfo[39m: [32m🚀 Server running on http://localhost:3000[39m
+[2025-04-04 11:01:56] [32minfo[39m: [32m📚 Swagger Docs on http://localhost:3000/api/docs[39m
+[2025-04-04 11:01:56] [32minfo[39m: [32mHealthController {/health}:[39m
+[2025-04-04 11:01:56] [32minfo[39m: [32mMapped {/health/database, GET} route[39m
+[2025-04-04 11:01:56] [32minfo[39m: [32mAppController {/}:[39m
+[2025-04-04 11:01:56] [32minfo[39m: [32mMapped {/, GET} route[39m
+[2025-04-04 11:01:56] [32minfo[39m: [32mAuthController {/api/security/auth}:[39m
+[2025-04-04 11:01:56] [32minfo[39m: [32mMapped {/api/security/auth/login, POST} route[39m
+[2025-04-04 11:01:56] [32minfo[39m: [32mMapped {/api/security/auth/logout, POST} route[39m
+[2025-04-04 11:01:56] [32minfo[39m: [32mNest application successfully started[39m
+[2025-04-04 11:10:18] [32minfo[39m: [32m🚀 Server running on http://localhost:3000[39m
+[2025-04-04 11:10:18] [32minfo[39m: [32m📚 Swagger Docs on http://localhost:3000/api/docs[39m
+[2025-04-04 11:10:18] [32minfo[39m: [32mHealthController {/health}:[39m
+[2025-04-04 11:10:18] [32minfo[39m: [32mMapped {/health/database, GET} route[39m
+[2025-04-04 11:10:18] [32minfo[39m: [32mAppController {/}:[39m
+[2025-04-04 11:10:18] [32minfo[39m: [32mMapped {/, GET} route[39m
+[2025-04-04 11:10:18] [32minfo[39m: [32mAuthController {/api/security/auth}:[39m
+[2025-04-04 11:10:18] [32minfo[39m: [32mMapped {/api/security/auth/login, POST} route[39m
+[2025-04-04 11:10:18] [32minfo[39m: [32mMapped {/api/security/auth/logout, POST} route[39m
+[2025-04-04 11:10:18] [32minfo[39m: [32mTenantController {/api/tenant}:[39m
+[2025-04-04 11:10:18] [32minfo[39m: [32mMapped {/api/tenant/create, POST} route[39m
+[2025-04-04 11:10:18] [32minfo[39m: [32mNest application successfully started[39m
+[2025-04-04 11:52:19] [31merror[39m: [31mQueryFailedError: invalid input syntax for type uuid: ""[39m
+[31m    at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:331:19)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at SelectQueryBuilder.loadRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3805:25)[39m
+[31m    at SelectQueryBuilder.executeEntitiesAndRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3551:26)[39m
+[31m    at SelectQueryBuilder.getRawAndEntities (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1670:29)[39m
+[31m    at SelectQueryBuilder.getMany (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1760:25)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:118:32[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at SubjectDatabaseEntityLoader.load (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:150:9)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/EntityPersistExecutor.ts:116:21 {[39m
+[31m  query: 'SELECT "TenantModel"."id" AS "TenantModel_id", "TenantModel"."tenant_name" AS "TenantModel_tenant_name", "TenantModel"."tenant_id" AS "TenantModel_tenant_id", "TenantModel"."tenant_id_type" AS "TenantModel_tenant_id_type", "TenantModel"."person_type" AS "TenantModel_person_type", "TenantModel"."subscription_plan" AS "TenantModel_subscription_plan", "TenantModel"."currency" AS "TenantModel_currency", "TenantModel"."tenant_password" AS "TenantModel_tenant_password" FROM "tenants" "TenantModel" WHERE "TenantModel"."id" IN ($1)',[39m
+[31m  parameters: [ '' ],[39m
+[31m  driverError: error: invalid input syntax for type uuid: ""[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/pg/lib/client.js:545:17[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m      at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:260:25)[39m
+[31m      at SelectQueryBuilder.loadRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3805:25)[39m
+[31m      at SelectQueryBuilder.executeEntitiesAndRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3551:26)[39m
+[31m      at SelectQueryBuilder.getRawAndEntities (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1670:29)[39m
+[31m      at SelectQueryBuilder.getMany (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1760:25)[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:118:32[39m
+[31m      at async Promise.all (index 0)[39m
+[31m      at SubjectDatabaseEntityLoader.load (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:150:9) {[39m
+[31m    length: 129,[39m
+[31m    severity: 'ERROR',[39m
+[31m    code: '22P02',[39m
+[31m    detail: undefined,[39m
+[31m    hint: undefined,[39m
+[31m    position: undefined,[39m
+[31m    internalPosition: undefined,[39m
+[31m    internalQuery: undefined,[39m
+[31m    where: "unnamed portal parameter $1 = ''",[39m
+[31m    schema: undefined,[39m
+[31m    table: undefined,[39m
+[31m    column: undefined,[39m
+[31m    dataType: undefined,[39m
+[31m    constraint: undefined,[39m
+[31m    file: 'uuid.c',[39m
+[31m    line: '133',[39m
+[31m    routine: 'string_to_uuid'[39m
+[31m  },[39m
+[31m  length: 129,[39m
+[31m  severity: 'ERROR',[39m
+[31m  code: '22P02',[39m
+[31m  detail: undefined,[39m
+[31m  hint: undefined,[39m
+[31m  position: undefined,[39m
+[31m  internalPosition: undefined,[39m
+[31m  internalQuery: undefined,[39m
+[31m  where: "unnamed portal parameter $1 = ''",[39m
+[31m  schema: undefined,[39m
+[31m  table: undefined,[39m
+[31m  column: undefined,[39m
+[31m  dataType: undefined,[39m
+[31m  constraint: undefined,[39m
+[31m  file: 'uuid.c',[39m
+[31m  line: '133',[39m
+[31m  routine: 'string_to_uuid'[39m
+[31m}[39m
+[2025-04-04 11:59:38] [32minfo[39m: [32m🚀 Server running on http://localhost:3000[39m
+[2025-04-04 11:59:38] [32minfo[39m: [32m📚 Swagger Docs on http://localhost:3000/api/docs[39m
+[2025-04-04 11:59:38] [32minfo[39m: [32mHealthController {/health}:[39m
+[2025-04-04 11:59:38] [32minfo[39m: [32mMapped {/health/database, GET} route[39m
+[2025-04-04 11:59:38] [32minfo[39m: [32mAppController {/}:[39m
+[2025-04-04 11:59:38] [32minfo[39m: [32mMapped {/, GET} route[39m
+[2025-04-04 11:59:38] [32minfo[39m: [32mAuthController {/api/security/auth}:[39m
+[2025-04-04 11:59:38] [32minfo[39m: [32mMapped {/api/security/auth/login, POST} route[39m
+[2025-04-04 11:59:38] [32minfo[39m: [32mMapped {/api/security/auth/logout, POST} route[39m
+[2025-04-04 11:59:38] [32minfo[39m: [32mTenantController {/api/tenant}:[39m
+[2025-04-04 11:59:38] [32minfo[39m: [32mMapped {/api/tenant/create, POST} route[39m
+[2025-04-04 11:59:38] [32minfo[39m: [32mNest application successfully started[39m
+[2025-04-04 11:59:44] [31merror[39m: [31mQueryFailedError: invalid input syntax for type uuid: "24981518818"[39m
+[31m    at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:331:19)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at SelectQueryBuilder.loadRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3805:25)[39m
+[31m    at SelectQueryBuilder.executeEntitiesAndRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3551:26)[39m
+[31m    at SelectQueryBuilder.getRawAndEntities (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1670:29)[39m
+[31m    at SelectQueryBuilder.getMany (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1760:25)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:118:32[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at SubjectDatabaseEntityLoader.load (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:150:9)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/EntityPersistExecutor.ts:116:21 {[39m
+[31m  query: 'SELECT "RepresentativeModel"."id" AS "RepresentativeModel_id", "RepresentativeModel"."representative_name" AS "RepresentativeModel_representative_name", "RepresentativeModel"."representative_id_type" AS "RepresentativeModel_representative_id_type", "RepresentativeModel"."representative_id" AS "RepresentativeModel_representative_id" FROM "representatives" "RepresentativeModel" WHERE "RepresentativeModel"."id" IN ($1)',[39m
+[31m  parameters: [ '24981518818' ],[39m
+[31m  driverError: error: invalid input syntax for type uuid: "24981518818"[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/pg/lib/client.js:545:17[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m      at PostgresQueryRunner.query (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/driver/postgres/PostgresQueryRunner.ts:260:25)[39m
+[31m      at SelectQueryBuilder.loadRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3805:25)[39m
+[31m      at SelectQueryBuilder.executeEntitiesAndRawResults (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:3551:26)[39m
+[31m      at SelectQueryBuilder.getRawAndEntities (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1670:29)[39m
+[31m      at SelectQueryBuilder.getMany (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/query-builder/SelectQueryBuilder.ts:1760:25)[39m
+[31m      at /home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:118:32[39m
+[31m      at async Promise.all (index 0)[39m
+[31m      at SubjectDatabaseEntityLoader.load (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/src/persistence/SubjectDatabaseEntityLoader.ts:150:9) {[39m
+[31m    length: 143,[39m
+[31m    severity: 'ERROR',[39m
+[31m    code: '22P02',[39m
+[31m    detail: undefined,[39m
+[31m    hint: undefined,[39m
+[31m    position: undefined,[39m
+[31m    internalPosition: undefined,[39m
+[31m    internalQuery: undefined,[39m
+[31m    where: "unnamed portal parameter $1 = '...'",[39m
+[31m    schema: undefined,[39m
+[31m    table: undefined,[39m
+[31m    column: undefined,[39m
+[31m    dataType: undefined,[39m
+[31m    constraint: undefined,[39m
+[31m    file: 'uuid.c',[39m
+[31m    line: '133',[39m
+[31m    routine: 'string_to_uuid'[39m
+[31m  },[39m
+[31m  length: 143,[39m
+[31m  severity: 'ERROR',[39m
+[31m  code: '22P02',[39m
+[31m  detail: undefined,[39m
+[31m  hint: undefined,[39m
+[31m  position: undefined,[39m
+[31m  internalPosition: undefined,[39m
+[31m  internalQuery: undefined,[39m
+[31m  where: "unnamed portal parameter $1 = '...'",[39m
+[31m  schema: undefined,[39m
+[31m  table: undefined,[39m
+[31m  column: undefined,[39m
+[31m  dataType: undefined,[39m
+[31m  constraint: undefined,[39m
+[31m  file: 'uuid.c',[39m
+[31m  line: '133',[39m
+[31m  routine: 'string_to_uuid'[39m
+[31m}[39m
+[2025-04-04 12:01:28] [32minfo[39m: [32m🚀 Server running on http://localhost:3000[39m
+[2025-04-04 12:01:28] [32minfo[39m: [32m📚 Swagger Docs on http://localhost:3000/api/docs[39m
+[2025-04-04 12:01:28] [32minfo[39m: [32mHealthController {/health}:[39m
+[2025-04-04 12:01:28] [32minfo[39m: [32mMapped {/health/database, GET} route[39m
+[2025-04-04 12:01:28] [32minfo[39m: [32mAppController {/}:[39m
+[2025-04-04 12:01:28] [32minfo[39m: [32mMapped {/, GET} route[39m
+[2025-04-04 12:01:28] [32minfo[39m: [32mAuthController {/api/security/auth}:[39m
+[2025-04-04 12:01:28] [32minfo[39m: [32mMapped {/api/security/auth/login, POST} route[39m
+[2025-04-04 12:01:28] [32minfo[39m: [32mMapped {/api/security/auth/logout, POST} route[39m
+[2025-04-04 12:01:28] [32minfo[39m: [32mTenantController {/api/tenant}:[39m
+[2025-04-04 12:01:28] [32minfo[39m: [32mMapped {/api/tenant/create, POST} route[39m
+[2025-04-04 12:01:28] [32minfo[39m: [32mNest application successfully started[39m
+[2025-04-04 12:01:47] [32minfo[39m: [32m🚀 Server running on http://localhost:3000[39m
+[2025-04-04 12:01:47] [32minfo[39m: [32m📚 Swagger Docs on http://localhost:3000/api/docs[39m
+[2025-04-04 12:01:47] [32minfo[39m: [32mHealthController {/health}:[39m
+[2025-04-04 12:01:47] [32minfo[39m: [32mMapped {/health/database, GET} route[39m
+[2025-04-04 12:01:47] [32minfo[39m: [32mAppController {/}:[39m
+[2025-04-04 12:01:47] [32minfo[39m: [32mMapped {/, GET} route[39m
+[2025-04-04 12:01:47] [32minfo[39m: [32mAuthController {/api/security/auth}:[39m
+[2025-04-04 12:01:47] [32minfo[39m: [32mMapped {/api/security/auth/login, POST} route[39m
+[2025-04-04 12:01:47] [32minfo[39m: [32mMapped {/api/security/auth/logout, POST} route[39m
+[2025-04-04 12:01:47] [32minfo[39m: [32mTenantController {/api/tenant}:[39m
+[2025-04-04 12:01:47] [32minfo[39m: [32mMapped {/api/tenant/create, POST} route[39m
+[2025-04-04 12:01:47] [32minfo[39m: [32mNest application successfully started[39m

@@ -1,0 +1,160 @@
+[2025-03-27 12:41:07] [31merror[39m: [31muncaughtException: listen EADDRINUSE: address already in use :::3000[39m
+[31mError: listen EADDRINUSE: address already in use :::3000[39m
+[31m    at Server.setupListenHandle [as _listen2] (node:net:1937:16)[39m
+[31m    at listenInCluster (node:net:1994:12)[39m
+[31m    at Server.listen (node:net:2099:7)[39m
+[31m    at ExpressAdapter.listen (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/platform-express/adapters/express-adapter.js:109:32)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/core/nest-application.js:183:30[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at NestApplication.listen (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/core/nest-application.js:173:16)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at bootstrap (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/src/main.ts:30:3)[39m - Stack: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at ExpressAdapter.listen (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/platform-express/adapters/express-adapter.js:109:32)
+    at /home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/core/nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/core/nest-application.js:173:16)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at bootstrap (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/src/main.ts:30:3)
+[2025-03-27 12:41:07] [31merror[39m: [31muncaughtException: listen EADDRINUSE: address already in use :::3000[39m
+[31mError: listen EADDRINUSE: address already in use :::3000[39m
+[31m    at Server.setupListenHandle [as _listen2] (node:net:1937:16)[39m
+[31m    at listenInCluster (node:net:1994:12)[39m
+[31m    at Server.listen (node:net:2099:7)[39m
+[31m    at ExpressAdapter.listen (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/platform-express/adapters/express-adapter.js:109:32)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/core/nest-application.js:183:30[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at NestApplication.listen (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/core/nest-application.js:173:16)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at bootstrap (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/src/main.ts:30:3)[39m - Stack: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at ExpressAdapter.listen (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/platform-express/adapters/express-adapter.js:109:32)
+    at /home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/core/nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/core/nest-application.js:173:16)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at bootstrap (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/src/main.ts:30:3)
+[2025-03-27 12:41:15] [31merror[39m: [31muncaughtException: listen EADDRINUSE: address already in use :::3000[39m
+[31mError: listen EADDRINUSE: address already in use :::3000[39m
+[31m    at Server.setupListenHandle [as _listen2] (node:net:1937:16)[39m
+[31m    at listenInCluster (node:net:1994:12)[39m
+[31m    at Server.listen (node:net:2099:7)[39m
+[31m    at ExpressAdapter.listen (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/platform-express/adapters/express-adapter.js:109:32)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/core/nest-application.js:183:30[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at NestApplication.listen (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/core/nest-application.js:173:16)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at bootstrap (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/src/main.ts:30:3)[39m - Stack: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at ExpressAdapter.listen (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/platform-express/adapters/express-adapter.js:109:32)
+    at /home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/core/nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/core/nest-application.js:173:16)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at bootstrap (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/src/main.ts:30:3)
+[2025-03-27 12:41:15] [31merror[39m: [31muncaughtException: listen EADDRINUSE: address already in use :::3000[39m
+[31mError: listen EADDRINUSE: address already in use :::3000[39m
+[31m    at Server.setupListenHandle [as _listen2] (node:net:1937:16)[39m
+[31m    at listenInCluster (node:net:1994:12)[39m
+[31m    at Server.listen (node:net:2099:7)[39m
+[31m    at ExpressAdapter.listen (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/platform-express/adapters/express-adapter.js:109:32)[39m
+[31m    at /home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/core/nest-application.js:183:30[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at NestApplication.listen (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/core/nest-application.js:173:16)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at bootstrap (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/src/main.ts:30:3)[39m - Stack: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at ExpressAdapter.listen (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/platform-express/adapters/express-adapter.js:109:32)
+    at /home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/core/nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/node_modules/@nestjs/core/nest-application.js:173:16)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at bootstrap (/home/camilopolania/Documentos/novacore/proyectos/NovaTrack/desarrollo/app-server/src/main.ts:30:3)
+[2025-04-03 08:21:42] [31merror[39m: [31muncaughtException: Socket closed unexpectedly[39m
+[31mError: Socket closed unexpectedly[39m
+[31m    at Socket.<anonymous> (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@redis/client/dist/lib/client/socket.js:194:118)[39m
+[31m    at Object.onceWrapper (node:events:633:26)[39m
+[31m    at Socket.emit (node:events:518:28)[39m
+[31m    at TCP.<anonymous> (node:net:351:12)[39m - Stack: Error: Socket closed unexpectedly
+    at Socket.<anonymous> (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@redis/client/dist/lib/client/socket.js:194:118)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:518:28)
+    at TCP.<anonymous> (node:net:351:12)
+[2025-04-03 08:21:42] [31merror[39m: [31muncaughtException: Socket closed unexpectedly[39m
+[31mError: Socket closed unexpectedly[39m
+[31m    at Socket.<anonymous> (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@redis/client/dist/lib/client/socket.js:194:118)[39m
+[31m    at Object.onceWrapper (node:events:633:26)[39m
+[31m    at Socket.emit (node:events:518:28)[39m
+[31m    at TCP.<anonymous> (node:net:351:12)[39m - Stack: Error: Socket closed unexpectedly
+    at Socket.<anonymous> (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@redis/client/dist/lib/client/socket.js:194:118)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:518:28)
+    at TCP.<anonymous> (node:net:351:12)
+[2025-04-07 12:35:01] [31merror[39m: [31muncaughtException: Socket closed unexpectedly[39m
+[31mError: Socket closed unexpectedly[39m
+[31m    at Socket.<anonymous> (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@redis/client/dist/lib/client/socket.js:194:118)[39m
+[31m    at Object.onceWrapper (node:events:633:26)[39m
+[31m    at Socket.emit (node:events:518:28)[39m
+[31m    at TCP.<anonymous> (node:net:351:12)[39m - Stack: Error: Socket closed unexpectedly
+    at Socket.<anonymous> (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@redis/client/dist/lib/client/socket.js:194:118)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:518:28)
+    at TCP.<anonymous> (node:net:351:12)
+[2025-04-07 12:35:01] [31merror[39m: [31muncaughtException: Socket closed unexpectedly[39m
+[31mError: Socket closed unexpectedly[39m
+[31m    at Socket.<anonymous> (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@redis/client/dist/lib/client/socket.js:194:118)[39m
+[31m    at Object.onceWrapper (node:events:633:26)[39m
+[31m    at Socket.emit (node:events:518:28)[39m
+[31m    at TCP.<anonymous> (node:net:351:12)[39m - Stack: Error: Socket closed unexpectedly
+    at Socket.<anonymous> (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@redis/client/dist/lib/client/socket.js:194:118)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:518:28)
+    at TCP.<anonymous> (node:net:351:12)
+[2025-04-07 13:04:18] [31merror[39m: [31muncaughtException: Socket closed unexpectedly[39m
+[31mError: Socket closed unexpectedly[39m
+[31m    at Socket.<anonymous> (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@redis/client/dist/lib/client/socket.js:194:118)[39m
+[31m    at Object.onceWrapper (node:events:633:26)[39m
+[31m    at Socket.emit (node:events:518:28)[39m
+[31m    at TCP.<anonymous> (node:net:351:12)[39m - Stack: Error: Socket closed unexpectedly
+    at Socket.<anonymous> (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@redis/client/dist/lib/client/socket.js:194:118)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:518:28)
+    at TCP.<anonymous> (node:net:351:12)
+[2025-04-07 13:04:18] [31merror[39m: [31muncaughtException: Socket closed unexpectedly[39m
+[31mError: Socket closed unexpectedly[39m
+[31m    at Socket.<anonymous> (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@redis/client/dist/lib/client/socket.js:194:118)[39m
+[31m    at Object.onceWrapper (node:events:633:26)[39m
+[31m    at Socket.emit (node:events:518:28)[39m
+[31m    at TCP.<anonymous> (node:net:351:12)[39m - Stack: Error: Socket closed unexpectedly
+    at Socket.<anonymous> (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@redis/client/dist/lib/client/socket.js:194:118)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:518:28)
+    at TCP.<anonymous> (node:net:351:12)
+[2025-04-09 08:58:54] [31merror[39m: [31muncaughtException: Socket closed unexpectedly[39m
+[31mError: Socket closed unexpectedly[39m
+[31m    at Socket.<anonymous> (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@redis/client/dist/lib/client/socket.js:194:118)[39m
+[31m    at Object.onceWrapper (node:events:633:26)[39m
+[31m    at Socket.emit (node:events:518:28)[39m
+[31m    at TCP.<anonymous> (node:net:351:12)[39m - Stack: Error: Socket closed unexpectedly
+    at Socket.<anonymous> (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@redis/client/dist/lib/client/socket.js:194:118)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:518:28)
+    at TCP.<anonymous> (node:net:351:12)
+[2025-04-09 08:58:54] [31merror[39m: [31muncaughtException: Socket closed unexpectedly[39m
+[31mError: Socket closed unexpectedly[39m
+[31m    at Socket.<anonymous> (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@redis/client/dist/lib/client/socket.js:194:118)[39m
+[31m    at Object.onceWrapper (node:events:633:26)[39m
+[31m    at Socket.emit (node:events:518:28)[39m
+[31m    at TCP.<anonymous> (node:net:351:12)[39m - Stack: Error: Socket closed unexpectedly
+    at Socket.<anonymous> (/home/camilopolania/Documentos/novacore/proyectos/Novalogic/desarrollo/novalogic-app-server/node_modules/@redis/client/dist/lib/client/socket.js:194:118)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:518:28)
+    at TCP.<anonymous> (node:net:351:12)
