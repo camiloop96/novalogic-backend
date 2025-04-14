@@ -4,15 +4,25 @@ import { setupSwagger } from "@config/swagger.config";
 import morgan from "morgan";
 import { AppLogger } from "@config/logger.config";
 import helmet from "helmet";
+import { JwtBlacklistMiddleware } from "modules/security/infrastructure/middlewares/jwt-blacklist.middleware";
+import cors from "cors";
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   // Habilita CORS
-  app.enableCors();
+  app.use(
+    cors({
+      origin: "http://localhost:5173",
+      credentials: true,
+    })
+  );
 
   // Logger Personalizado
   const logger = new AppLogger();
   app.useLogger(new AppLogger());
+
+  // Captura de errores
+  app.enableShutdownHooks();
 
   // Morgan para registro de solicitudes HTTP
   app.use(morgan("combined"));
@@ -34,4 +44,6 @@ async function bootstrap() {
 }
 
 /** Inicialización del bootstrap */
-bootstrap();
+bootstrap().catch((err) => {
+  console.error("🔥 Error during bootstrap:", err);
+});
