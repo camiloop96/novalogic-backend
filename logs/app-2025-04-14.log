@@ -10,3 +10,15 @@
 [2025-04-14 11:51:00] [32minfo[39m: [32mTenantController {/api/tenant}:[39m
 [2025-04-14 11:51:00] [32minfo[39m: [32mMapped {/api/tenant/create, POST} route[39m
 [2025-04-14 11:51:00] [32minfo[39m: [32mNest application successfully started[39m
+[2025-04-14 11:54:05] [32minfo[39m: [32m🚀 Server running on http://localhost:3000[39m
+[2025-04-14 11:54:05] [32minfo[39m: [32m📚 Swagger Docs on http://localhost:3000/api/docs[39m
+[2025-04-14 11:54:05] [32minfo[39m: [32mHealthController {/health}:[39m
+[2025-04-14 11:54:05] [32minfo[39m: [32mMapped {/health/database, GET} route[39m
+[2025-04-14 11:54:05] [32minfo[39m: [32mAppController {/}:[39m
+[2025-04-14 11:54:05] [32minfo[39m: [32mMapped {/, GET} route[39m
+[2025-04-14 11:54:05] [32minfo[39m: [32mAuthController {/api/security/auth}:[39m
+[2025-04-14 11:54:05] [32minfo[39m: [32mMapped {/api/security/auth/login, POST} route[39m
+[2025-04-14 11:54:05] [32minfo[39m: [32mMapped {/api/security/auth/logout, POST} route[39m
+[2025-04-14 11:54:05] [32minfo[39m: [32mTenantController {/api/tenant}:[39m
+[2025-04-14 11:54:05] [32minfo[39m: [32mMapped {/api/tenant/create, POST} route[39m
+[2025-04-14 11:54:05] [32minfo[39m: [32mNest application successfully started[39m
