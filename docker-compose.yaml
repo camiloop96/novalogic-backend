@@ -1,25 +1,9 @@
-version: '3.8'
+version: "3.8"
 
 services:
-  novatrack-api:
-    container_name: novatrack-api
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - 3000:3000
-    env_file:
-      - .env
-    depends_on:
-      - postgres
-    volumes:
-      - .:/app
-      - /app/node_modules
-    command: npm run start:prod
-    restart: always
 
-  novatrack-db:
-    container_name: novatrack-db
+  postgres:
+    container_name: novalogic-db
     image: postgres:15-alpine
     restart: always
     environment:
@@ -31,9 +15,44 @@ services:
     env_file:
       - .env
     ports:
-      - 5432:5432
+      - 5440:5432
     volumes:
       - postgres-data:/var/lib/postgresql/data
+    networks:
+      - novalogic-net
+
+  pgadmin:
+    container_name: novalogic-pgadmin
+    image: dpage/pgadmin4:latest
+    restart: always
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
+      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
+    env_file:
+      - .env
+    ports:
+      - 49152:80
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    networks:
+      - novalogic-net
+
+  redis:
+    container_name: novalogic-redis
+    image: redis:7-alpine
+    restart: always
+    ports:
+      - 6380:6379
+    volumes:
+      - redis-data:/data
+    networks:
+      - novalogic-net
 
 volumes:
   postgres-data:
+  pgadmin-data:
+  redis-data:
+
+networks:
+  novalogic-net:
+    driver: bridge

@@ -4,21 +4,30 @@
     "target": "es2020",
     "moduleResolution": "node",
     "sourceMap": true,
-    "outDir": "dist",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "strict": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "paths": {
-      "@common/*": ["src/common/*"],
-      "@config/*": ["src/config/*"],
-      "@security/*": ["src/security/*"],
-      "@orders/*": ["src/orders/*"],
-      "@deliveries/*": ["src/deliveries/*"],
-      "@users/*": ["src/users/*"],
-      "@database/*": ["src/database/*"],
-      "@stats/*": ["src/stats/*"]
-    }
+      "@common/*": ["common/*"],
+      "@config/*": ["config/*"],
+      "@database/*": ["database/*"],
+      "@customers/*": ["modules/customers/*"],
+      "@deliveries/*": ["modules/deliveries/*"],
+      "@logistics/*": ["modules/logistics/*"],
+      "@orders/*": ["modules/orders/*"],
+      "@payments/*": ["modules/payments/*"],
+      "@products/*": ["modules/products/*"],
+      "@security/*": ["modules/security/*"],
+      "@shipping/*": ["modules/shipping/*"],
+      "@inventory/*": ["modules/inventory/*"],
+      "@stats/*": ["modules/stats/*"],
+      "@stores/*": ["modules/stores/*"],
+      "@tenant/*": ["modules/tenant/*"],
+      "@users/*": ["modules/users/*"]
+    },
+    "outDir": "./dist"
   }
 }
